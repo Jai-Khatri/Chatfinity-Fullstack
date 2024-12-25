@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+
+
+aside {
+    width: 300px; 
+    background-color: #ffffff; 
+    border-right: 1px solid #e0e0e0; 
+    height: 85vh; 
+    overflow-y: auto;
+}
+
+.users {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+}
+
+.userBtn {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.userBtn:hover {
+    background-color: #f0f0f0; 
+}
+
+.userBtn div img {
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.userListTxt {
+    font-size: 30px;
+    font-family: "Overpass", serif;
+    margin-bottom: 15px; 
+}
+
+.userTxt {
+    font-family: "Overpass", serif;
+}
+
+
+.onlineIndicator {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute; 
+    top: 5px; 
+    right: -5px; 
+}

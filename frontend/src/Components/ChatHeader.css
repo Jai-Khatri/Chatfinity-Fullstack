@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+
+.mainHeader{
+    background-color: black;
+    color: white;
+    width: 100vh;
+    border-radius: 10px;
+}
+
+.chatHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 12vh;
+}
+
+.chatHeader img{
+    border-radius: 120px;
+    background-color: white;
+    border: 3px solid grey;
+
+}
+
+.chatHeader h3{
+    font-family: "Overpass" , serif;
+    align-self: center;
+    margin-left: 18px;
+    font-size: 28px;
+}
+
+.chatHeader p{
+    font-family: "Overpass" , serif;
+    align-self: center;
+    margin-left: 18px;
+    font-size: 18px;
+}
+
+.chatHeader button{
+    height: 35px;
+    width: 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(175, 175, 175);
+    color: red;
+    transition: ease-in-out 200ms;
+    margin-left: auto;    
+}
+
+.chatHeader button:hover{
+    scale: 1.1;
+}

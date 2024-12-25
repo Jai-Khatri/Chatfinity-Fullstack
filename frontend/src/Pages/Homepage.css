@@ -1,0 +1,17 @@
+.HomepageCard{
+    background-color:  rgb(255, 255, 255);
+    color: black;
+    height: 85vh;
+    position: relative;
+    top: 50px;
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 1800px;
+    padding: 20px; 
+    border-radius: 20px;
+}
+
+.ChatSection{
+    display: flex;
+    gap: 120px;
+}

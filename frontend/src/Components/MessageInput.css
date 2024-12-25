@@ -1,0 +1,50 @@
+.message-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-preview {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.image-preview img {
+    max-width: 100px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.remove-image-btn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.message-form {
+    display: flex;
+    align-items: center;
+}
+
+.message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.button-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-icon img {
+    width: 25px;
+}
+
+button[disabled] {
+    opacity: 0.5;
+}
