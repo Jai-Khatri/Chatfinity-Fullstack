@@ -1,8 +1,8 @@
-body{
+body {
     overflow: hidden;
 }
 
-.page{
+.page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,50 +10,50 @@ body{
     justify-content: center;
 }
 
-.page img{
-    width: 280px;
-    height: 280px;
+.page img {
+    width: 55vw;
+    max-width: 280px;
+    height: auto;
 }
 
-.mainForm{
+.mainForm {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     color: black;
     align-items: center;
-    width: 550px;
-    height: 800px;
-    justify-content:space-evenly;
+    width: 90%;
+    max-width: 550px;
+    height: auto;
+    padding: 20px;
+    justify-content: space-evenly;
     border-radius: 10px;
 }
 
-.mainForm button{
+.mainForm button {
     width: 100px;
-    height: 15px;
-    font-size: 10px;
+    height: 35px;
+    font-size: 12px;
 }
 
-.signintxt{
+.signintxt {
     color: black;
     display: flex;
     flex-direction: row;
-    align-items: first baseline;
+    align-items: baseline;
     font-weight: 600;
-    align-self: center;
-    margin-left: 40px;
 }
 
-#showbtn{
+#showbtn {
     background-color: transparent;
     border: none;
     color: rgb(146, 146, 146);
     text-decoration: underline;
     font-size: 12px;
     cursor: pointer;
-    align-self: center;
 }
 
-#LIbtn{
+#LIbtn {
     align-self: center;
     font-size: 12px;
     width: 170px;
@@ -64,39 +64,63 @@ body{
     transition: ease-in-out 90ms;
 }
 
-#LIbtn:hover{
+#LIbtn:hover {
     text-decoration: underline;
     transform: scale(1.1);
-    cursor: pointer;
 }
 
-#signinbtn{
-    background-color: transparent;
-    border: none;
-    text-align: left;
-    color: aqua;
-    text-decoration: underline;
-    font-size: 14px;
-    font-weight: 550;
-    cursor: pointer;
+#signinbtn {
+   background-color: transparent; 
+   border:none; 
+   text-align:left; 
+   color:aqua; 
+   text-decoration:underline; 
+   font-size:14px; 
 }
 
-#textInput{
-    background: none;
-    border: rgb(192, 192, 192) solid 1px;
-    width: 350px;
-    height: 20px;
-    padding: 6px;
-    font-size: 12px;
-    border-radius: 4px;
-    transition: ease-in 70ms;
-    color: rgb(0, 0, 0);
+#textInput {
+   background:none; 
+   border:rgb(192,192,192) solid 1px; 
+   width:auto; 
+   max-width:350px; 
+   height:auto; 
+   padding:.5rem; 
+   margin: .5rem;
+   font-size:.9rem; 
+   border-radius:.25rem; 
 }
 
-#textInput:hover{
-    border-color: rgb(94, 94, 94);
+#textInput:hover {
+   border-color:rgb(94,94,94); 
 }
 
-#welcometxt h3{
-    margin-left: 80px;
+#welcomeText {
+   text-align:center; 
+   display:flex; 
+   flex-direction:column; 
+   align-items:center; 
+   width:auto; 
+   margin-left:auto; 
+   margin-right:auto; 
+}
+
+#welcomeText h1,
+#welcomeText h3 {
+   margin-top:.5rem; 
+   margin-bottom:.5rem; 
+}
+
+@media (max-width: 600px) {
+   .mainForm {
+       width: 95%;
+       padding: 10px; 
+   }
+
+   #LIbtn {
+       width: calc(100% - 20px); 
+   }
+
+   #textInput {
+       width: calc(100% - 20px); 
+   }
 }

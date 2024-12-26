@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
 
+body{
+    overflow-y: auto;
+}
+
 .card {
     position: relative;
     display: flex; 
@@ -9,53 +13,76 @@
     top: 150px;
 }
 
-.profilePage{
+.profilePage {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     color: black;
-    width: 550px;
-    height: 900px;
-    padding: 50px;
+    width: 90%;
+    max-width: 550px;
+    height: auto;
+    padding: 20px;
     justify-content: space-around;
     border-radius: 30px;
 }
 
-.profilePage h1{
-    font-family: "Overpass" , serif;
+.profilePage h1 {
+    font-family: "Overpass", serif;
     align-self: center;
 }
 
-.profilePage img{
-    width: 420px;
-    height: 420px;
+.profilePage img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
     align-self: center;
-    border-radius: 220px;
+    border-radius: 50%;
     border: 5px solid black;
 }
 
-.profilePage input{
+.profilePage input {
     font-weight: 800;
     align-self: center;
-    margin-left: 100px;
     margin-top: 30px;
 }
 
-.profilePage p{
-    font-family: "Overpass" , serif;
+.profilePage p {
+    font-family: "Overpass", serif;
     align-self: center;
     font-weight: 600;
 }
 
-.info{
+.info {
     display: flex;
     gap: 14px;
     padding: 1px 15px ;
     border: 2px solid black ;
 }
 
-.info p{
+.info p {
     position: relative;
     top: 4px;
     font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .profilePage {
+        padding: 10px; 
+        width: 95%; 
+        height:auto; 
+        border-radius:20px; 
+    }
+
+    .info p {
+        font-size: 16px; 
+    }
+
+    .profilePage img {
+        width: 80%; 
+        max-width:none; 
+        height:auto; 
+        border-radius:50%; 
+        border-width:3px; 
+    }
 }

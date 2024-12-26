@@ -50,7 +50,6 @@ const SignUpPage = () => {
 
         <span id="welcometxt">
          <h1>Welcome to Chatfinity!</h1>
-         <h3>Create your account</h3>
          </span>
 
         <input value={formData.fullName} onChange={(e) => setFormData({...formData , fullName: e.target.value})} id="textInput" type="text" placeholder="Full name" minLength={4}/>

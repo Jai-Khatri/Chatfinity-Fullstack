@@ -1,41 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
 
-.mainHeader{
+.mainHeader {
     background-color: black;
     color: white;
-    width: 100vh;
+    width: 100%;
     border-radius: 10px;
 }
 
-.chatHeader{
+.chatHeader {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    height: 12vh;
+    align-items: center; 
+    justify-content: space-between; 
 }
 
-.chatHeader img{
-    border-radius: 120px;
+.chatHeader img {
+    border-radius: 50%;
     background-color: white;
     border: 3px solid grey;
-
+    width: 50px;
+    height: 50px;
 }
 
-.chatHeader h3{
-    font-family: "Overpass" , serif;
-    align-self: center;
-    margin-left: 18px;
-    font-size: 28px;
+.user-info {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
 }
 
-.chatHeader p{
-    font-family: "Overpass" , serif;
-    align-self: center;
-    margin-left: 18px;
-    font-size: 18px;
+.user-info h3 {
+    margin-right: 10px; 
 }
 
-.chatHeader button{
+.chatHeader p {
+    font-family: "Overpass", serif;
+    font-size: 16px;
+}
+
+.chatHeader button {
     height: 35px;
     width: 40px;
     border: none;
@@ -44,9 +47,39 @@
     background-color: rgb(175, 175, 175);
     color: red;
     transition: ease-in-out 200ms;
-    margin-left: auto;    
+    margin-left: auto; 
 }
 
-.chatHeader button:hover{
-    scale: 1.1;
+.chatHeader button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+   .chatHeader {
+       padding: 8px; 
+       flex-direction: row; 
+       align-items: center; 
+       justify-content: space-between; 
+   }
+
+   .user-info h3 {
+       font-size: 20px; 
+       margin-left: 10px; 
+   }
+
+   .chatHeader p {
+       font-size: 14px; 
+       margin-left: 10px; 
+   }
+
+   .chatHeader img {
+       width: 40px; 
+       height: 40px; 
+   }
+
+   .chatHeader button {
+       width: 35px; 
+       height: 30px; 
+       margin-left:auto; 
+   }
 }

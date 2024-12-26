@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
-
-
 aside {
     width: 300px; 
     background-color: #ffffff; 
     border-right: 1px solid #e0e0e0; 
     height: 85vh; 
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 .users {
     display: flex;
-    flex-direction: column; 
+    flex-wrap: wrap; 
     padding: 20px;
 }
 
@@ -21,8 +19,9 @@ aside {
     padding: 10px;
     border: 2px solid black;
     border-radius: 10px;
-    margin-bottom: 10px; 
+    margin: 5px; 
     transition: background-color 0.3s ease; 
+    flex: 1 1 calc(45% - 10px); 
 }
 
 .userBtn:hover {
@@ -46,7 +45,6 @@ aside {
     font-family: "Overpass", serif;
 }
 
-
 .onlineIndicator {
     width: 10px;
     height: 10px;
@@ -55,4 +53,18 @@ aside {
     position: absolute; 
     top: 5px; 
     right: -5px; 
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 100%; 
+        height: auto; 
+        border-right: none; 
+        border-bottom: 1px solid #e0e0e0; 
+    }
+
+    .userBtn {
+        flex: 1 1 calc(50% - 10px); 
+        margin-bottom: 10px; 
+    }
 }

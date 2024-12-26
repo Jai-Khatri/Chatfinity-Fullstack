@@ -46,10 +46,13 @@ const LoginPage = () => {
 
          <img src={chatfinityIcon}/>
 
-        <span id="welcometxt">
-         <h1>Welcome back to Chatfinity!</h1>
-         <h3>Login to get back to chatting</h3>
-         </span>
+         <span id="welcometxt">
+    <div id="welcomeText">
+        <h1>Welcome back to Chatfinity!</h1>
+    </div>
+</span>
+
+
 
 
         <input value={formData.email} onChange={(e) => setFormData({...formData , email: e.target.value})} id="textInput" type="email" placeholder="Email"/>

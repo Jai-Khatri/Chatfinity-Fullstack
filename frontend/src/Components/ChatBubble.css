@@ -6,16 +6,13 @@
     padding: 5px; 
 }
 
-
 .chat-bubble-container.sent {
     flex-direction: row-reverse; 
 }
 
-
 .chat-bubble-container.received {
     flex-direction: row; 
 }
-
 
 .chat-image {
     margin-left: 10px; 
@@ -65,6 +62,18 @@
 }
 
 .message-image img {
-    max-width: 100%;
     border-radius: 10px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .chat-bubble {
+        padding: 10px; 
+        font-size: 14px; 
+        max-width: 90%; 
+    }
+
+    .w-10 {
+        width: 30px; 
+    }
 }

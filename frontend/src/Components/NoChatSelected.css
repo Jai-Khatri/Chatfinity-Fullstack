@@ -14,25 +14,40 @@
     border-radius: 8px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     top: 10px; 
-    left: 14px;
-    font-family: "Overpass" , serif;
+    margin-bottom: 1rem;
 }
 
-.container h1{
+.container h1 {
     font-size: 50px;
-    position: relative;
-    bottom: 110px;
 }
 
-.container h3{
+.container h3 {
     font-size: 22px;
-    position: relative;
-    bottom: 140px;
 }
 
-.container img{
+.container img {
     width: 500px;
     height: auto;
-    position: relative;
-    top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        height: auto; 
+        padding: 20px; 
+        border-width: 1px; 
+    }
+
+    .container h1 {
+        font-size: 36px; 
+    }
+
+    .container h3 {
+        font-size: 18px; 
+    }
+
+    .container img {
+        width: 80%; 
+        max-width: 400px; 
+    }
 }
